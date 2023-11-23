@@ -37,6 +37,8 @@ User Flows
 
 ### Home Page
 
+#### Basic Functionality
+
 * As a user
 * When I visit the home page
 * And fill in optional first name, last name, and birthdate fields
@@ -48,12 +50,16 @@ User Flows
 
 ### Basic Info Form
 
+#### Basic Functionality
+
 * As a user
 * When I visit the "Basic Info" page
 * And I fill in the first name, last name, and birthdate fields
 * And I click the "Continue" button
 * Then the fields I filled in are persisted
 * And I see the "Address" form
+
+#### Validation
 
 * As a user
 * When I visit the "Basic Info page"
@@ -64,12 +70,16 @@ User Flows
 
 ### Address Form
 
+#### Basic Functionality
+
 * As a user
 * When I visit the "Address" form
 * And I fill in the street, city, state, and zipcode fields
 * And I click the "Continue" button
 * Then the fields I filled in are persisted
 * And I see the "Vehicles" form
+
+#### Validation
 
 * As a user
 * When I visit the "Basic Info page"
@@ -80,25 +90,35 @@ User Flows
 
 ### Vehicles Form
 
+#### Basic Functionality
+
 * As a user
 * When I visit the "Vehicles" form
 * And I fill in the VIN, year, make, and model fields
 * And I click "Add Vehicle"
 * Then it should add the vehicle to the list
 
+#### Validating a Vehicle
+
 * As a user
 * When I visit the "Vehicles" form
 * And I do not fill in one of the VIN, year, make, and model fields
 * Then I should see a message telling me to fill in the field
 
+#### Submitting the Form
+
 * As a user
 * If I have filled in 1-3 vehicles
 * When I click "Continue", I should see the "Review" form
+
+#### Validating a List of Vehicles
 
 * As a user
 * When I visit the "Vehicles" form
 * And I have not filled in 1-3 vehicles
 * Then I should see a message telling me to add a vehicle
+
+#### Deleting a Vehicle
 
 * As a user
 * When I visit the "Vehicles" form
@@ -111,12 +131,16 @@ User Flows
 
 ### Review Form
 
+#### Basic Functionality
+
 * As a user
 * When I visit the "Review" form
 * It should show me the fields I've filled out so far
 * And if I have filled in all the necessary fields
 * And I click "Submit"
 * It should show me the "Quote" page
+
+#### Validation
 
 * As a user
 * When I visit the "Review" form
@@ -128,6 +152,8 @@ User Flows
 
 ### Breadcrumbs
 
+#### Basic Functionality
+
 * As a user
 * When I visit a form
 * I should see "Breadcrumbs" of the previous steps
@@ -135,6 +161,8 @@ User Flows
 * It should take me to the previous step, with my data already filled in
 
 ### Quote Page
+
+#### Basic Functionality
 
 * As a user
 * When I visit the "Quote" page
